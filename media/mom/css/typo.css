@@ -1,0 +1,23 @@
+
+/*
+	Important class names to be used everywhere.
+	Thanks: blueprint	css framework
+*/
+
+.large      	{ font-size: 130%; }
+.small,small	{ font-size: 80%; }
+.hide       	{ display: none; }
+
+.quiet      	{ color: #777; }
+.loud       	{ color: #000; }
+.highlighted  	{ background:#ff0; }
+
+.dark				{ background-color:#222; color:#fff; }
+.light			{ background-color:#f9f9f9; }
+.dark a 			{ color:#ceff00; }
+            	
+.first      	{ margin-left:0; padding-left:0; }
+.last       	{ margin-right:0; padding-right:0; }
+.top        	{ margin-top:0; padding-top:0; }
+.bottom     	{ margin-bottom:0; padding-bottom:0; }                                                  
+
