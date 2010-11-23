@@ -1,1 +1,37 @@
+
 The only thing in your HEAD is Mom.
+	- what's needed to render the page
+	- the rest is deferred
+	
+Things
+	- minimal
+	- looks build-in 
+	- others via feature()
+	--> packr.js?
+	
+Todo
+	- packx.js
+	- load / wait / push
+
+	
+// http://unixpapa.com/js/dyna.html
+
+<script src="mom.js"></script>
+<script>var script = mom();</script>
+
+// after all scripts are loaded
+script(function() {
+	jQuery("#foo").code();
+});
+
+
+script("jquery.js", function()  {
+	// will do
+});
+
+script(["analytics.js", "foo.js"], function() {
+	// will do
+});
+
+
+mom.exec();

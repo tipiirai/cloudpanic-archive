@@ -19,7 +19,7 @@
 		 html = doc.documentElement,
 		 el = doc.createElement("i"),
 		 style = el.style,
-		 pre = ' -o- -moz- -ms- -webkit- -khtml- '.split(' '), 
+		 prefs = ' -o- -moz- -ms- -webkit- -khtml- '.split(' '), 
 		 widths = [480, 640, 800, 982, 1024, 1280],
 		 
 		 addClass = function(name) { 
@@ -92,7 +92,9 @@
 			widths = val;	
 		}
 					
-	}; 	 
+	}; 	
+	
+	
 		 
 	var tests = {
 		
@@ -101,32 +103,43 @@
 				 s2 = 'gradient(linear,left top,right bottom,from(#9f9),to(#fff));',
 				 s3 = 'linear-gradient(left top,#eee,#fff);';	
 		
-			style.cssText = (s1 + pre.join(s2 + s1) + pre.join(s3 + s1)).slice(0,-s1.length);		
+			style.cssText = (s1 + prefs.join(s2 + s1) + prefs.join(s3 + s1)).slice(0,-s1.length);		
 			return !!style.backgroundImage;
 		},
 		
 		rgba: function() {
-			style.backgroundColor = "rgba(0,0,0,.5)";		
+			style.cssText = "background-color:rgba(0,0,0,0.5)";		
 			return !!style.backgroundColor;
 		},
 		
-		textshadow: function() {
+		boxshadow: function() {
+			var style = doc.createElement("i").style;
+			style.cssText = prefs.join("box-shadow: 0 0 8px #fff;");
+			var len = style.cssText ? style.cssText.length : 0 
+			return len > 0 && len < 100;	
+		},
+		
+		textshadow: function() {			
 			return style.textShadow === '';	
 		}
 		
 	};	
 	
-	for (var key in tests) {
-		mom.feature(key, tests[key].call()); 
+	
+	for (var key in tests) {		
+		mom.feature(key, tests[key].call());
 	}
+	
+	
+	
 	
 	removeClass("no-js"); 
 	addClass("js");
 	
 	// window width: w100, lt480, lt1024 ...
 	function setWidth() {
-		var w = document.width || window.outerWidth;
-			 
+		var w = document.width || window.outerWidth || document.documentElement.clientWidth;
+		
 		// remove earlier widths
 		html.className = html.className.replace(/ (w|gt|lt)\d+/g, "");
 		addClass("w" + Math.round(w / 100) * 100);
@@ -138,7 +151,7 @@
 	}
 	
 	setWidth();	 	
-	window.onresize = setWidth;
+	window.onresize = setWidth;	
 	
 })(document);
 
