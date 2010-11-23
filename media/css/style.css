@@ -403,6 +403,7 @@ h2 em {
 	padding:15px;	
 }
 
+
 .navi {
 	width:235px;	
 	padding-right:0;
@@ -520,3 +521,15 @@ h2 em {
 .lt1024 #wrap 		{ width:982px;	 } 
 .lt1024 #facts 	{ padding:10px 54px 0; }
 .lt1024 #marketing-crap	{ width: 395px; }
+
+
+/* routing */
+#about #incloud {
+	border-color:#fff;		
+}
+
+#about #title h1 {
+	background-image:none;
+	letter-spacing:-1px;
+	padding:0;	
+}
