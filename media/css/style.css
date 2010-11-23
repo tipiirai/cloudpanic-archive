@@ -241,13 +241,12 @@ body {
 #title h1 {
 	background-position:0 -53px;
 	padding:22px 0 0 163px;
-	letter-spacing:-5px;
+	letter-spacing:-3px;
 }
 
 
 .panic #title h1 {
 	background-position:-9px -151px;
-	letter-spacing:-5px;
 	padding:27px 0 0 69px;	
 }
 
@@ -423,14 +422,14 @@ h2 em {
 	margin-bottom:1px;
 }
  
-.cloud #incloud, .panic #inpanic.active {
+.cloud #incloud, .panic #inpanic {
 	border-color:#333;
 }
 
 .navi a {
 	display:block;
 	float:left;
-	width:105px;
+	width:100px;
 	padding:3px 0;
 	color:#111;
 	font-size:11px;
