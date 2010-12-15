@@ -1,12 +1,5 @@
 
 
-/*
-	:mode=css:
-	the absolute minimal CSS reset	 
-	http://www.vcarrer.com/2010/05/css-mini-reset.html
-	thanks: luminarious
-*/
-
 * { 
 	vertical-align: baseline; 
 	font-weight: inherit; 
@@ -30,9 +23,6 @@ table {
 ::-moz-focus-inner {
 	border: 0;
 }
-
-
-/* :mode=css: */
 
 /* HTML5 elements */
 article, aside, details, footer, header, hgroup, menu, nav, section { 
@@ -73,19 +63,28 @@ hr {
 }
 
 /* clearfix */
-.clear, .clearfix { 
-	zoom: 1; 
+.clear, .clearfix {
+    display: block;
+    zoom: 1;
+
+    &:after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
 }
 
-.clear:after, .clearfix:after { 
-	content: "\0020"; 
-	display: block; 
-	height: 0; 
-	clear: both; 
-	visibility: hidden; 
+
+/* clearfix */
+.clear:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
-
-
 
 body {
 	background:#fff url(../img/bg.jpg);
@@ -275,6 +274,7 @@ h2 em {
 .fact h3 {
 	font-size:16px;		
 	color:#ddd;
+	margin-bottom:-6px;
 }
 
 .fact a {
@@ -433,17 +433,17 @@ h2 em {
 
 /* smaller screens */
 
-.lt1024 #wrap 		{ width:982px;	 } 
-.lt1024 #facts 	{ padding:10px 54px 0; }
-.lt1024 #marketing-crap	{ width: 395px; }
+.lt-1024 #wrap 				{ width:982px;	 } 
+.lt-1024 #facts 			{ padding:10px 54px 0; }
+.lt-1024 #marketing-crap	{ width: 395px; }
 
 
 /* routing */
-#about #incloud {
+#about-page #incloud {
 	border-color:#fff;		
 }
 
-#about #title h1 {
+#about-page #title h1 {
 	background-image:none;
 	letter-spacing:-1px;
 	padding:0;	

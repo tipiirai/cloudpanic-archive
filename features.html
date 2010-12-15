@@ -11,12 +11,12 @@
 	<meta name="author" content="tipiirai (Tero Piirainen)">	
 	
 	<link rel="icon" type="image/png" href="/media/img/favicon.png"> 
-	<link rel="stylesheet" href="/media/css/style.css?v=2">
+	<link rel="stylesheet" href="/media/css/style.css?v=4">
 	
 		
 	
 	<!-- CSS scripting & LabJS only-->
-	<script src="/media/mom/js/mom.js"></script>
+	<script src="/media/js/head.min.js"></script>
 </head>
 
 
@@ -24,7 +24,7 @@
 
 	<div id="wrap" class="panic">
 	
-		<a href="about.html" id="logo" title="About Cloudpanic">
+		<a href="/about.html" id="logo" title="About Cloudpanic">
 			<strong>!!</strong> cloudpanic
 			<em>Technologies to master. Crap to ignore.</em>
 		</a>
@@ -40,7 +40,7 @@
 					
 					<h2>
 						People hate features. They want simple working things. Sense the the features that matter and throw away the rest.
-						<em id="created">Mon, 29 Nov 2010 15:14:57 +0200</em>
+						<em id="created">Fri, 03 Dec 2010 10:00:00 +0200</em>
 					</h2>			
 				</div>
 				
@@ -48,7 +48,7 @@
 					<div id="share">
 						
 						<a id="tweet" href="http://twitter.com/share" 
-							data-text="Crap to ignore: Features"
+							data-text="Crap to ignore: Features @ cloudpanic.com"
 							class="twitter-share-button" data-count="vertical" 
 							data-via="cloudpanic">Tweet</a>
 							
@@ -57,6 +57,7 @@
 					</div>
 							 
 					<div id="facts" class="clear None">
+						
 						
 <div class="fact">
 	<h3>Disgusting products</h3>
@@ -91,8 +92,9 @@
 					</div>
 					
 					<div id="links" class="clear">						
-						 
-----
+						
+<a href="headjs.html">
+	SIDENOTE: Last tuesday I did "<code>git push headjs</code>" and it was an <small>immediate success</small></a>
 
 					</div>
 					
@@ -108,16 +110,19 @@
 			<div id="incloud" class="navi active">
 				<h3>Technologies to master</h3>
 				
-				<a href="index.html">The Cloud</a>
+				<a href="index.html">User Interfaces</a>
+				<a href="cloud.html">The Cloud</a>
 				<a href="stateless-design.html">Stateless design</a>
 				<a href="services.html">Services</a>
 				<a href="javascript.html">JavaScript</a>
-				<a href="static-html.html">Static HTML</a> 
+				<a href="static-html.html">Static HTML</a>
+				
 			</div>
 			
 			<div id="inpanic" class="navi">
 				<h3>Crap to ignore</h3>
  
+				<a href="features.html">Features</a>
 				<a href="sap.html">SAP</a>
 				<a href="java.html">Java</a>
 				<a href="flash.html">Flash</a>  
@@ -126,7 +131,7 @@
 			
 			<div id="marketing-crap">
 				<strong>Next story that matters</strong> 
-				<h2 id="after">Fri, 3 Dec 2010 09:00:00 +0200</h2> 
+				<h2 id="after">Wed, 15 Dec 2010 11:00:00 +0200</h2> 
 				<a href="http://twitter.com/cloudpanic">Hear about it!</a>
 			</div>
 		
@@ -135,16 +140,15 @@
 	</div>
 	
 	<div id="footer"> 
-		<a href="about.html">About</a> &bull; 
+		<a href="/about.html">About</a> &bull; 
 		<a href="http://www.flickr.com/photos/55014838@N08/galleries/72157625062868131/">Photo credits</a> &bull;
 		<a href="http://github.com/tipiirai/cloudpanic">Source code</a> (Github)</a>
 	</div>	
 			
 	<script>	
-	$LAB
-	.script("/media/js/site.js")
-	.script("http://platform.twitter.com/widgets.js")
-	.script("http://www.google-analytics.com/ga.js").wait(function() {		
+	head.js("/media/js/site.js")
+		 .js("http://platform.twitter.com/widgets.js")
+		 .js("http://www.google-analytics.com/ga.js", function() {		
 		
 			var tracker = _gat._getTracker("UA-19863497-1");
 			tracker._trackPageview();
