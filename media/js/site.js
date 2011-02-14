@@ -1,4 +1,5 @@
 
+/* dynamics for the static site */
 (function() {
 		
 	function prettytime(date) {
