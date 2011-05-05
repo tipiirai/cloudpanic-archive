@@ -1,0 +1,20 @@
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+  font-size: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+table {
+  border-collapse: collapse;
+}
+:focus {
+  outline: 0;
+}
+::-moz-focus-inner {
+  border: 0;
+}

@@ -1,0 +1,58 @@
+/* HTML5 elements */
+article,
+aside,
+details,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* bolded */
+strong,
+b,
+th,
+dt {
+  font-weight: bold;
+}
+/* italic */
+em, i, caption {
+  font-style: italic;
+}
+/* code */
+pre, code {
+  font-family: "courier new", monospace;
+}
+/* margin for block level elements */
+p,
+table,
+ul,
+ol {
+  margin: 0.8em 0;
+}
+li {
+  margin-left: 1.6em;
+}
+blockquote {
+  margin: 1.5em;
+}
+/* horizontal rule */
+hr {
+  border: 1px solid #ddd;
+  border-width: 1px 0 0;
+  margin: 1em 0;
+}
+/* clearfix */
+.clear, .clearfix {
+  display: block;
+  zoom: 1;
+}
+.clear:after, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
