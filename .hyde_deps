@@ -4,9 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-    <title>Stateless design @ CLOUD PANIC</title>
-    <meta name="description" content="It's not about JavaScript versus Ruby versus PHP. It's about being stateless. The key to infinite scalability. Simple as that.">
-    <meta name="keywords" content="stateless, stateless design, stateless architecture, infinite scalability, cloud application design">
+    <title> @ CLOUD PANIC</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="IT trends, technology trends, computing trends, cloud trends, cloud technologies, sap sucks">
     <meta name="author" content="">
 
     <link rel="icon" type="image/png" href="/media/img/favicon.png">
@@ -25,53 +25,32 @@
             <strong>!!</strong> cloudpanic
             <em>Technologies to master. Crap to ignore.</em>
         </a>
-        <div id="story" class="clear" style="background:url(http://farm1.static.flickr.com/15/21984315_aba2efcc0a_b.jpg)">
+        <div id="story" class="clear" style="background:">
     <a id="forward"
-            href="http://cloudpanic.com/static-html.html">
-            <em>
-                Next Technology:
-            </em>Static HTML
-                        <span></span>
+            href="http://twitter.com/cloudpanic">
+            <em>Next story is around the corner</em>            <span></span>
         </a>
             <div id="content">
         <div id="title">
-            <h1>Stateless design</h1>
+            <h1></h1>
             <h2>
-                It's not about JavaScript versus Ruby versus PHP. It's about being stateless. The key to infinite scalability. Simple as that.
+                
                 <em id="created">
-                    Tue, 23 Nov 2010 10:00:00 +0200
+                    Sat, 01 Jan 2000 10:00:00 +0200
                 </em>
             </h2>
         </div>
         <div id="bottom">
             <div id="share">
     <a id="tweet" href="http://twitter.com/share"
-        data-text="Technology to master: Stateless design @ cloudpanic.com"
+        data-text="Technology to master:  @ cloudpanic.com"
         class="twitter-share-button" data-count="vertical"
         data-via="cloudpanic">Tweet</a>
-    <iframe id="facebook" frameborder="0" src="http://www.facebook.com/plugins/like.php?href=http://cloudpanic.com/stateless-design.html&amp;layout=box_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" allowTransparency="true"></iframe>
+    <iframe id="facebook" frameborder="0" src="http://www.facebook.com/plugins/like.php?href=http://cloudpanic.com/.hyde_deps&amp;layout=box_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" allowTransparency="true"></iframe>
 </div>            <div id="facts" class="clear ">
-                <ul>
-<li>
-<h3>No state</h3>
-<p>Being stateless means that user information is not store into server's memory. Each request is
-independent of each other. The client request can be passed to any of your servers randomly.</p>
-</li>
-<li>
-<h3>Server up. Server down.</h3>
-<p>With the stateless design new servers can be popped up and down on demand. On peak hours you may
-have 10 servers running serving millions of users and on slow hours 2-3 servers can do the job.</p>
-</li>
-<li>
-<h3>Little or no work</h3>
-<p>Be stateless right from the beginning. There is no additional work. You are just ready to scale when
-needed. As a purist you want to <a href="http://cloudpanic.com/static-websites.html">be static</a> and
-<a href="http://cloudpanic.com/services.html">build services</a>.</p>
-</li>
-</ul>            </div>
+                            </div>
             <div id="links" class="clear">
-                <p><a href="http://www.rackspacecloud.com/blog/2009/07/17/coding-in-the-cloud-rule-3-use-a-stateless-design-whenever-possible/">Rackspace <em>Use a Stateless design whenever possible</em></a>
-<a href="http://articles.techrepublic.com.com/5100-10878_11-5030231.html">Tech Republic <em>Designing a stateless model</em></a></p>            </div>
+                            </div>
         </div>
     </div>
 </div>
@@ -106,7 +85,7 @@ needed. As a purist you want to <a href="http://cloudpanic.com/static-websites.h
         </a>
             <a
             href="http://cloudpanic.com/stateless-design.html"
-             class="active">
+            >
             Stateless design
         </a>
             <a
